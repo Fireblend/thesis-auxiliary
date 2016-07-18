@@ -1,0 +1,7 @@
+./keplerML.jar "random-modlem" "all" "no_pix" 25 1000 >> /home/sergio/keplerOutput/OUTPUT.TXT
+./keplerML.jar "random-modlem" "half" "no_pix" 25 1000 >> /home/sergio/keplerOutput/OUTPUT.TXT
+./keplerML.jar "random-modlem" "all" "no_pix" 50 1000 >> /home/sergio/keplerOutput/OUTPUT.TXT
+./keplerML.jar "random-modlem" "half" "no_pix" 50 1000 >> /home/sergio/keplerOutput/OUTPUT.TXT
+./keplerML.jar "random-modlem" "all" "no_pix" 75 1000 >> /home/sergio/keplerOutput/OUTPUT.TXT
+./keplerML.jar "random-modlem" "half" "no_pix" 75 1000 >> /home/sergio/keplerOutput/OUTPUT.TXT
+

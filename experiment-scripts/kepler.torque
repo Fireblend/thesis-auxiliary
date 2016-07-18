@@ -1,0 +1,4 @@
+#PBS -N $JOB
+#PBS -e $JOB.time
+
+java -jar keplerML $algo $size $attrs $split $JOB".output"

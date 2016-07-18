@@ -1,0 +1,62 @@
+# COLUMN tce_period:     Orbital Period [days]
+# COLUMN tce_time0bk:    Transit Epoch [BKJD]
+# COLUMN tce_ror:        Planet-Star Radius Ratio
+# COLUMN tce_dor:        Planet-Star Distance over Star Radius
+# COLUMN tce_incl:       Inclination [deg]
+# COLUMN tce_impact:     Impact Parameter
+# COLUMN tce_duration:   Transit Duration [hrs]
+# COLUMN tce_ingress:    Ingress Duration [hrs]
+# COLUMN tce_depth:      Transit Depth [ppm]
+# COLUMN tce_eccen:      Eccentricity
+# COLUMN tce_longp:      Long. of Periastron [deg]
+# COLUMN tce_ldm_coeff1: Limb Darkening Coeff. 1
+# COLUMN tce_ldm_coeff2: Limb Darkening Coeff. 2
+# COLUMN tce_ldm_coeff3: Limb Darkening Coeff. 3
+# COLUMN tce_ldm_coeff4: Limb Darkening Coeff. 4
+# COLUMN tce_num_transits: Number of Transits
+# COLUMN tce_full_conv:  Full Convergence Flag
+# COLUMN tce_model_snr:  Transit Signal-to-Noise (SNR)
+# COLUMN tce_model_chisq: Chi-Square
+# COLUMN tce_model_dof:  Degrees of Freedom
+# COLUMN tce_robstat:    Robust Statistic
+# COLUMN tce_dof1:       Degrees of Freedom 1
+# COLUMN tce_dof2:       Degrees of Freedom 2
+# COLUMN tce_chisq1:     Chi-Square 1
+# COLUMN tce_chisq2:     Chi-Square 2
+# COLUMN tce_prad:       Planetary Radius [Earth radii]
+# COLUMN tce_sma:        Orbit Semi-Major Axis [AU]
+# COLUMN tce_eqt:        Equilibrium Temperature [K]
+# COLUMN tce_nkoi:       Number of Associated KOIs
+# COLUMN tce_quarters:   Quarters Observed
+# COLUMN tce_steff:      Stellar Effective Temperature [K]
+# COLUMN tce_slogg:      Stellar Surface Gravity [log10(cm/s**2)]
+# COLUMN tce_smet:       Stellar Metallicity [dex]
+# COLUMN tce_sradius:    Stellar Radius [Solar radii]
+# COLUMN tce_max_sngle_ev: Single Event Statistic
+# COLUMN tce_max_mult_ev: Multiple Event Statistic (MES)
+# COLUMN tce_minmes:     Minimum MES
+# COLUMN tce_mesmad:     Median Absolute Deviation (MAD) MES
+# COLUMN tce_bin_oedp_stat: Odd-Even Depth Comparison Statistic
+# COLUMN tce_rmesmad:    Calculated Ratio MES over MAD MES
+# COLUMN tce_rsnrmes:    Calculated Ratio SNR over MES
+# COLUMN tce_rminmes:    Calculated Ratio Min. MES over MES
+# COLUMN tce_fwm_stat:   FW Offset Significance
+# COLUMN tce_fwm_sra:    FW Source &alpha;(OOT) [hrs]
+# COLUMN tce_fwm_sdec:   FW Source &delta;(OOT) [deg]
+# COLUMN tce_fwm_srao:   FW Source &Delta;&alpha;(OOT) [sec]
+# COLUMN tce_fwm_sdeco:  FW Source &Delta;&delta;(OOT) [arcsec]
+# COLUMN tce_fwm_prao:   FW &Delta;&alpha;(OOT) [sec]
+# COLUMN tce_fwm_pdeco:  FW &Delta;&delta;(OOT) [arcsec]
+# COLUMN tce_dicco_mra:  PRF &Delta;&alpha;<sub>MQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_mdec: PRF &Delta;&delta;<sub>MQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_msky: PRF &Delta;&theta;<sub>MQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_fra:  PRF &Delta;&alpha;<sub>SQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_fdec: PRF &Delta;&delta;<sub>SQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_fsky: PRF &Delta;&theta;<sub>SQ</sub>(OOT) [arcsec]
+# COLUMN tce_dikco_mra:  PRF &Delta;&alpha;<sub>MQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_mdec: PRF &Delta;&delta;<sub>MQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_msky: PRF &Delta;&theta;<sub>MQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_fra:  PRF &Delta;&alpha;<sub>SQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_fdec: PRF &Delta;&delta;<sub>SQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_fsky: PRF &Delta;&theta;<sub>SQ</sub>(KIC) [arcsec]
+# COLUMN av_training_set: Autovetter Training Set Label

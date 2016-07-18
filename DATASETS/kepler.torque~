@@ -1,0 +1,5 @@
+#PBS -N $JOB
+#PBS -e $JOB.time
+
+cd tesis/output
+./keplerML $algo $size $attrs $split $JOB".output"

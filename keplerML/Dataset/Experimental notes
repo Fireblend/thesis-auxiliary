@@ -1,0 +1,16 @@
+Dataset:
+
+	AFP	PC	NTP
+Large   9596	3600	2541	 = 15737
+Medium  6396	2400	1694	 = 10490
+Small   3198	1200	847 	 = 5245
+
+
+Attributes:
+
+6 algoritmos
+3 tamanos
+3 grupos de atr - no extras, +pixel
+5 reps
+
+240

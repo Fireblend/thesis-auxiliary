@@ -1,0 +1,39 @@
+#!/usr/bin/python
+import time
+import os
+import commands
+import re
+
+def waitForJob(outputFile):
+	while(not (os.path.exists(outputFile))):
+		print("Durmiendo por 60s: " + outputFile + " no existe\n")
+		time.sleep(10)
+
+def initQsubs():
+	qsubs = []
+
+	qsubs.append(qsub -q xeon -lnodes=1:ppn=8 -lwalltime=4:0:00 ./kepler.torque "random-forest" "half" "no_pix" 25 1000)
+	qsubs.append(qsub -q xeon -lnodes=1:ppn=8 -lwalltime=4:0:00 ./kepler.torque "random-forest" "all" "no_pix" 25 1007)
+	qsubs.append(qsub -q xeon -lnodes=1:ppn=8 -lwalltime=4:0:00 ./kepler.torque "random-forest" "half" "no_pix" 75 1008)
+	qsubs.append(qsub -q xeon -lnodes=1:ppn=8 -lwalltime=4:0:00 ./kepler.torque "random-forest" "half" "all" 50 1011)
+	qsubs.append(qsub -q xeon -lnodes=1:ppn=8 -lwalltime=4:0:00 ./kepler.torque "random-forest" "half" "all" 50 1016)
+
+  	return qsubs
+
+# main #
+qsubs = initQsubs()
+total = len(qsubs)
+i = 0
+while(i < total):
+	print i
+	status1, output1 = commands.getstatusoutput(qsubs[i+0])
+	status2, output2 = commands.getstatusoutput(qsubs[i+1])
+	status3, output3 = commands.getstatusoutput(qsubs[i+2])
+	status4, output4 = commands.getstatusoutput(qsubs[i+3])
+	status5, output5 = commands.getstatusoutput(qsubs[i+4])
+	waitForJob("output/" + (re.split("=", qsubs[i+0]))[-1] + ".output")
+	waitForJob("output/" + (re.split("=", qsubs[i+1]))[-1] + ".output")
+	waitForJob("output/" + (re.split("=", qsubs[i+2]))[-1] + ".output")
+	waitForJob("output/" + (re.split("=", qsubs[i+3]))[-1] + ".output")
+	waitForJob("output/" + (re.split("=", qsubs[i+4]))[-1] + ".output")
+	i += 5
